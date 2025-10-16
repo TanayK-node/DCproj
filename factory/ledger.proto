@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+service LedgerService {
+  rpc RecordTransaction (TransactionRequest) returns (TransactionResponse);
+  rpc GetLedger (Empty) returns (LedgerData);
+}
+
+message TransactionRequest {
+  string batch_id = 1;
+  string sender = 2;
+  string receiver = 3;
+  string status = 4;
+}
+
+message TransactionResponse {
+  string message = 1;
+}
+
+message LedgerEntry {
+  string batch_id = 1;
+  string sender = 2;
+  string receiver = 3;
+  string status = 4;
+}
+
+message LedgerData {
+  repeated LedgerEntry entries = 1;
+}
+
+message Empty {}
