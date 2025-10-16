@@ -1,2 +1,0 @@
-db.transactions.find().pretty()
-use pharmacy_ledger

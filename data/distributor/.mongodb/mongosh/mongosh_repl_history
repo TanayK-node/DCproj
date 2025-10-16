@@ -1,6 +1,0 @@
-exit
-db.transactions.find().pretty()
-use distributor_ledger
-db.transactions.find().pretty()
-show collections
-use distributor_ledger
