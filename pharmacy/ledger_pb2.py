@@ -44,3 +44,4 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_LEDGERSERVICE']._serialized_start=283
   _globals['_LEDGERSERVICE']._serialized_end=396
 # @@protoc_insertion_point(module_scope)
+
